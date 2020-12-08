@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+.header{
+    background-image: url("https://images.unsplash.com/photo-1604374846718-697e40d766a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    background-color: lightgoldenrodyellow;
+
+}
+
+.overlay{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+
+} 
+
+.header-title{
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.content{
+    display: grid; 
+    padding: 10px 0 10px;
+    /* background-color:  lightgoldenrodyellow; */
+}
+
+.news{
+    width: 768px;
+    margin: 0 auto 5px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+    /* box-shadow: 4px 4px 5px rgba(0, 0, 100, .5); */
+}
+
+section div:nth-child(2n){
+    background-color: lightgray;
+}
+
+.news:nth-child(-n+2)::before{
+    content: "New";
+    color: rgb(209, 13, 13);
+    font-size: 1em;
+    vertical-align: top;
+}
+
+.news-title{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.under-title-text{
+    margin: 0;
+    font-weight: 300;
+    font-family: 'Roboto', serif;
+    color: black;
+}
+
+.author{
+    color: black;
+    text-decoration: none;
+}
+
+section div img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+p{
+    margin: 0 auto;
+    font-weight: 400;
+
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links{
+    margin-bottom: 50px;
+}
+
+footer .links > a{
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;    
+}
+
+.copyright{
+    color: rgb(188, 117, 125);
+    font-family: 'Times New Roman', Times, serif;
+}
